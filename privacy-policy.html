@@ -1,0 +1,1001 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#071425">
+<meta name="description" content="Website privacy information for GLOCLIEN SYSTEMS LTD.">
+<title>Privacy Policy | GLOCLIEN SYSTEMS LTD</title>
+
+<style>
+:root {
+    --navy: #071425;
+    --deep: #040c18;
+    --surface: #10233b;
+    --cyan: #48dce9;
+    --blue: #467aff;
+    --white: #f5f8ff;
+    --muted: #a9bbd0;
+    --border: rgba(143,185,224,.18);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Inter, "Segoe UI", Arial, sans-serif;
+    background: var(--deep);
+    color: var(--white);
+    line-height: 1.8;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(1180px, 90%);
+    margin: auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(4,12,24,.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    min-height: 84px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.logo {
+    width: 47px;
+    height: 47px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    background: linear-gradient(145deg,var(--cyan),var(--blue));
+    display: grid;
+    place-items: center;
+    color: var(--deep);
+    font-size: 28px;
+    font-weight: 900;
+    box-shadow: 0 0 28px rgba(72,220,233,.18);
+}
+
+.brand-name {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    line-height: 1.4;
+}
+
+.brand-sub {
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: var(--muted);
+}
+
+.back-button {
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 700;
+    transition: .2s;
+}
+
+.back-button:hover {
+    color: var(--cyan);
+    border-color: var(--cyan);
+}
+
+.notice {
+    padding: 13px 20px;
+    background: #15273b;
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.hero {
+    position: relative;
+    padding: 85px 0;
+    overflow: hidden;
+    background:
+        radial-gradient(ellipse at 85% 30%,#193c71,transparent 45%),
+        radial-gradient(ellipse at 15% 90%,#0b3446,transparent 40%),
+        var(--navy);
+    border-bottom: 1px solid var(--border);
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+    background-size: 55px 55px;
+    pointer-events: none;
+}
+
+.hero-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.5fr .8fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.eyebrow {
+    color: var(--cyan);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+h1 {
+    font-size: clamp(42px,6vw,72px);
+    line-height: 1.12;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+}
+
+.gradient-text {
+    background: linear-gradient(100deg,#83eff2,#7da5ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero p {
+    max-width: 650px;
+    color: var(--muted);
+    font-size: 17px;
+}
+
+.date-label {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 8px 17px;
+    border: 1px solid var(--border);
+    background: rgba(72,220,233,.06);
+    color: var(--cyan);
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.shield-visual {
+    position: relative;
+    min-height: 260px;
+    display: grid;
+    place-items: center;
+}
+
+.shield-ring {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    border: 1px solid rgba(72,220,233,.22);
+    border-radius: 50%;
+}
+
+.shield-ring.outer {
+    width: 290px;
+    height: 290px;
+    border-color: rgba(70,122,255,.2);
+    border-style: dashed;
+    animation: rotate 40s linear infinite;
+}
+
+.shield-core {
+    width: 160px;
+    height: 160px;
+    display: grid;
+    place-items: center;
+    border-radius: 35px;
+    border: 1px solid rgba(72,220,233,.4);
+    background: linear-gradient(145deg,#153957,#091828);
+    box-shadow: 0 0 65px rgba(72,220,233,.15);
+}
+
+.shield-core svg {
+    width: 85px;
+    height: 85px;
+    fill: none;
+    stroke: var(--cyan);
+    stroke-width: 1.4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+@keyframes rotate {
+    to { transform: rotate(360deg); }
+}
+
+.policy-layout {
+    display: grid;
+    grid-template-columns: 280px minmax(0,1fr);
+    gap: 45px;
+    padding: 65px 0 85px;
+    align-items: start;
+}
+
+.sidebar {
+    position: sticky;
+    top: 110px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 25px 20px;
+    background: linear-gradient(145deg,#11243a,#0a1728);
+    max-height: calc(100vh - 130px);
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    font-size: 14px;
+    color: var(--cyan);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 17px;
+}
+
+.sidebar a {
+    display: block;
+    color: var(--muted);
+    font-size: 13px;
+    padding: 10px 12px;
+    border-radius: 7px;
+    transition: .2s;
+}
+
+.sidebar a:hover {
+    color: var(--cyan);
+    background: rgba(72,220,233,.07);
+}
+
+.policy-content {
+    min-width: 0;
+}
+
+.policy-section {
+    padding: 32px;
+    border: 1px solid var(--border);
+    border-radius: 17px;
+    margin-bottom: 22px;
+    background: linear-gradient(145deg,#0e2034,#091625);
+    scroll-margin-top: 110px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 19px;
+}
+
+.section-number {
+    flex-shrink: 0;
+    width: 39px;
+    height: 39px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    background: rgba(72,220,233,.09);
+    border: 1px solid rgba(72,220,233,.15);
+    color: var(--cyan);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.policy-section h2 {
+    font-size: 23px;
+    line-height: 1.35;
+    letter-spacing: -.4px;
+}
+
+.policy-section p {
+    color: var(--muted);
+    font-size: 15px;
+    margin-bottom: 14px;
+}
+
+.policy-section p:last-child {
+    margin-bottom: 0;
+}
+
+.policy-section ul {
+    padding-left: 22px;
+    margin: 13px 0;
+    color: var(--muted);
+    font-size: 15px;
+}
+
+.policy-section li {
+    padding: 5px 0;
+}
+
+.policy-section li::marker {
+    color: var(--cyan);
+}
+
+.policy-section strong {
+    color: var(--white);
+}
+
+.inline-link {
+    color: var(--cyan);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    overflow-wrap: anywhere;
+}
+
+.contact-box {
+    padding: 25px;
+    background: rgba(72,220,233,.045);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.contact-box h3 {
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.contact-email {
+    color: var(--cyan);
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+footer {
+    background: #040b15;
+    border-top: 1px solid var(--border);
+    padding: 45px 0 25px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.footer-links a:hover {
+    color: var(--cyan);
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-top: 1px solid var(--border);
+    padding-top: 22px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+a:focus-visible {
+    outline: 3px solid var(--cyan);
+    outline-offset: 5px;
+}
+
+@media (max-width: 850px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hero {
+        padding: 60px 0 35px;
+    }
+
+    .shield-visual {
+        min-height: 240px;
+        transform: scale(.8);
+    }
+
+    .policy-layout {
+        grid-template-columns: 1fr;
+        padding-top: 30px;
+        gap: 25px;
+    }
+
+    .sidebar {
+        position: static;
+        max-height: none;
+    }
+
+    .policy-section {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 450px) {
+    .brand-name {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .brand-sub {
+        letter-spacing: 2px;
+    }
+
+    .logo {
+        width: 39px;
+        height: 39px;
+        font-size: 23px;
+    }
+
+    .back-button {
+        padding: 8px 11px;
+        font-size: 11px;
+    }
+
+    .policy-section {
+        padding: 20px;
+    }
+
+    .policy-section h2 {
+        font-size: 19px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="container navbar">
+
+        <a class="brand" href="index.html">
+            <div class="logo" aria-hidden="true">G</div>
+            <div>
+                <div class="brand-name">GLOCLIEN</div>
+                <div class="brand-sub">SYSTEMS LTD</div>
+            </div>
+        </a>
+
+        <a class="back-button" href="index.html">
+            &larr; Back to Home
+        </a>
+
+    </div>
+</header>
+
+<div class="notice">
+    Draft privacy notice — subject to organization review and confirmation before publication.
+</div>
+
+<main>
+
+    <section class="hero">
+        <div class="container hero-grid">
+
+            <div>
+                <div class="eyebrow">Privacy &amp; Transparency</div>
+
+                <h1>
+                    Privacy <span class="gradient-text">Policy.</span>
+                </h1>
+
+                <p>
+                    Information about how personal information
+                    may be handled when visiting the corporate
+                    website of GLOCLIEN SYSTEMS LTD.
+                </p>
+
+                <span class="date-label">
+                    Draft prepared: November 25, 2026
+                </span>
+            </div>
+
+            <div class="shield-visual" aria-hidden="true">
+                <div class="shield-ring"></div>
+                <div class="shield-ring outer"></div>
+
+                <div class="shield-core">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11z"/>
+                        <rect x="8.5" y="10.5" width="7" height="6" rx="1"/>
+                        <path d="M10 10.5V9a2 2 0 014 0v1.5"/>
+                        <path d="M12 13v1"/>
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="container policy-layout">
+
+        <aside class="sidebar">
+            <h2>Contents</h2>
+            <nav aria-label="Privacy policy sections">
+                <a href="#introduction">01. Introduction</a>
+                <a href="#scope">02. Scope</a>
+                <a href="#information">03. Information Collected</a>
+                <a href="#usage">04. Use of Information</a>
+                <a href="#cookies">05. Cookies &amp; Storage</a>
+                <a href="#sharing">06. Information Sharing</a>
+                <a href="#retention">07. Data Retention</a>
+                <a href="#security">08. Data Security</a>
+                <a href="#rights">09. Your Privacy Rights</a>
+                <a href="#children">10. Children's Privacy</a>
+                <a href="#third-party">11. Third-Party Services</a>
+                <a href="#transfers">12. International Processing</a>
+                <a href="#applications">13. Mobile Applications</a>
+                <a href="#changes">14. Policy Updates</a>
+                <a href="#contact">15. Contact Information</a>
+            </nav>
+        </aside>
+
+        <article class="policy-content">
+
+            <section class="policy-section" id="introduction">
+                <div class="section-heading">
+                    <span class="section-number">01</span>
+                    <h2>Introduction</h2>
+                </div>
+
+                <p>
+                    This draft privacy notice has been prepared
+                    for GLOCLIEN SYSTEMS LTD to explain the
+                    handling of personal information associated
+                    with its corporate website.
+                </p>
+
+                <p>
+                    The organization must review this notice
+                    against its actual data processing practices
+                    before adopting it as an effective policy.
+                </p>
+            </section>
+
+            <section class="policy-section" id="scope">
+                <div class="section-heading">
+                    <span class="section-number">02</span>
+                    <h2>Scope of This Policy</h2>
+                </div>
+
+                <p>
+                    This notice is intended for visitors to
+                    <strong>glocliensystemsltd.online</strong>
+                    and individuals who communicate with the
+                    organization through its published
+                    business contact channels.
+                </p>
+
+                <p>
+                    It does not automatically cover separate
+                    applications, products or third-party services,
+                    which may have their own privacy notices.
+                </p>
+            </section>
+
+            <section class="policy-section" id="information">
+                <div class="section-heading">
+                    <span class="section-number">03</span>
+                    <h2>Information Collected</h2>
+                </div>
+
+                <p>
+                    The current static website design does not
+                    contain registration forms, payment forms
+                    or user account functionality.
+                </p>
+
+                <p>
+                    Information may nevertheless arise from
+                    website hosting and business communications,
+                    including:
+                </p>
+
+                <ul>
+                    <li>Names and email addresses voluntarily provided in correspondence.</li>
+                    <li>Information included in business enquiries.</li>
+                    <li>IP addresses and technical connection information processed by hosting providers.</li>
+                    <li>Browser, device and website request information recorded by infrastructure providers.</li>
+                </ul>
+            </section>
+
+            <section class="policy-section" id="usage">
+                <div class="section-heading">
+                    <span class="section-number">04</span>
+                    <h2>Use of Information</h2>
+                </div>
+
+                <p>
+                    Depending on the organization's confirmed
+                    activities, relevant information may be
+                    processed for purposes such as:
+                </p>
+
+                <ul>
+                    <li>Responding to business enquiries.</li>
+                    <li>Providing requested information.</li>
+                    <li>Maintaining website availability and security.</li>
+                    <li>Investigating technical problems.</li>
+                    <li>Meeting applicable legal obligations.</li>
+                </ul>
+
+                <p>
+                    Applicable legal grounds and any additional
+                    purposes must be confirmed before this
+                    policy becomes effective.
+                </p>
+            </section>
+
+            <section class="policy-section" id="cookies">
+                <div class="section-heading">
+                    <span class="section-number">05</span>
+                    <h2>Cookies and Local Storage</h2>
+                </div>
+
+                <p>
+                    The current website source does not
+                    intentionally install analytics cookies,
+                    advertising cookies or tracking scripts.
+                </p>
+
+                <p>
+                    Hosting providers, external websites and
+                    other infrastructure services may process
+                    technical information independently.
+                </p>
+
+                <p>
+                    This section must be updated if analytics,
+                    advertising technologies or other tracking
+                    services are introduced.
+                </p>
+            </section>
+
+            <section class="policy-section" id="sharing">
+                <div class="section-heading">
+                    <span class="section-number">06</span>
+                    <h2>Information Sharing</h2>
+                </div>
+
+                <p>
+                    Website and correspondence information may
+                    be processed by service providers involved
+                    in hosting, communications or technical
+                    operations.
+                </p>
+
+                <p>
+                    Information may also need to be disclosed
+                    where required by applicable law or a valid
+                    legal obligation.
+                </p>
+
+                <p>
+                    Actual recipients and sharing arrangements
+                    must be reviewed by the organization before
+                    publication.
+                </p>
+            </section>
+
+            <section class="policy-section" id="retention">
+                <div class="section-heading">
+                    <span class="section-number">07</span>
+                    <h2>Data Retention</h2>
+                </div>
+
+                <p>
+                    Retention periods should reflect the purpose
+                    for which information is processed, applicable
+                    legal requirements and legitimate operational
+                    needs.
+                </p>
+
+                <p>
+                    Specific retention periods and deletion
+                    procedures remain subject to confirmation
+                    by the organization.
+                </p>
+            </section>
+
+            <section class="policy-section" id="security">
+                <div class="section-heading">
+                    <span class="section-number">08</span>
+                    <h2>Data Security</h2>
+                </div>
+
+                <p>
+                    Appropriate security measures should be
+                    maintained to protect personal information
+                    against unauthorized access, disclosure,
+                    alteration or loss.
+                </p>
+
+                <p>
+                    No internet transmission or electronic storage
+                    system can be guaranteed completely secure.
+                    The organization must confirm its actual
+                    security arrangements before adopting this
+                    notice.
+                </p>
+            </section>
+
+            <section class="policy-section" id="rights">
+                <div class="section-heading">
+                    <span class="section-number">09</span>
+                    <h2>Your Privacy Rights</h2>
+                </div>
+
+                <p>
+                    Depending on applicable data protection law,
+                    individuals may have rights relating to their
+                    personal information, including:
+                </p>
+
+                <ul>
+                    <li>Requesting access to personal information.</li>
+                    <li>Requesting correction of inaccurate information.</li>
+                    <li>Requesting deletion where legally applicable.</li>
+                    <li>Objecting to or restricting certain processing.</li>
+                    <li>Withdrawing consent where processing relies on consent.</li>
+                    <li>Submitting a complaint to a competent data protection authority.</li>
+                </ul>
+
+                <p>
+                    Applicable rights, responsible authorities
+                    and request procedures must be confirmed
+                    according to the organization's jurisdiction.
+                </p>
+            </section>
+
+            <section class="policy-section" id="children">
+                <div class="section-heading">
+                    <span class="section-number">10</span>
+                    <h2>Children's Privacy</h2>
+                </div>
+
+                <p>
+                    This corporate website is designed as a
+                    general business information resource
+                    and does not contain child-specific account
+                    registration functionality.
+                </p>
+
+                <p>
+                    Any future services intended for children
+                    must have privacy arrangements appropriate
+                    to their audience and applicable law.
+                </p>
+            </section>
+
+            <section class="policy-section" id="third-party">
+                <div class="section-heading">
+                    <span class="section-number">11</span>
+                    <h2>Third-Party Services</h2>
+                </div>
+
+                <p>
+                    The website is being prepared for hosting
+                    through GitHub Pages. GitHub may process
+                    technical information in connection with
+                    its infrastructure services.
+                </p>
+
+                <p>
+                    Further information is available in the
+                    <a class="inline-link"
+                       href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        GitHub General Privacy Statement
+                    </a>.
+                </p>
+
+                <p>
+                    External websites and services may have
+                    their own terms and privacy practices.
+                </p>
+            </section>
+
+            <section class="policy-section" id="transfers">
+                <div class="section-heading">
+                    <span class="section-number">12</span>
+                    <h2>International Data Processing</h2>
+                </div>
+
+                <p>
+                    Internet hosting and communication providers
+                    may operate infrastructure in different
+                    countries.
+                </p>
+
+                <p>
+                    The organization must establish any relevant
+                    international data transfers and applicable
+                    safeguards before finalizing this policy.
+                </p>
+            </section>
+
+            <section class="policy-section" id="applications">
+                <div class="section-heading">
+                    <span class="section-number">13</span>
+                    <h2>Mobile Applications</h2>
+                </div>
+
+                <p>
+                    This corporate website privacy notice is not
+                    a substitute for the privacy policy of any
+                    individual mobile application.
+                </p>
+
+                <p>
+                    Where applications are developed or published,
+                    their privacy notices must accurately describe
+                    their specific practices, including:
+                </p>
+
+                <ul>
+                    <li>Personal and device information collected.</li>
+                    <li>Application permissions and their purposes.</li>
+                    <li>Advertising and analytics services, where used.</li>
+                    <li>Third-party software development kits.</li>
+                    <li>Information sharing and retention practices.</li>
+                    <li>Account and data deletion procedures, where applicable.</li>
+                </ul>
+
+                <p>
+                    These disclosures should reflect the actual
+                    behavior of each application.
+                </p>
+            </section>
+
+            <section class="policy-section" id="changes">
+                <div class="section-heading">
+                    <span class="section-number">14</span>
+                    <h2>Policy Updates</h2>
+                </div>
+
+                <p>
+                    This draft should be reviewed whenever
+                    website functionality, service providers,
+                    data handling practices or applicable
+                    requirements change.
+                </p>
+
+                <p>
+                    Once approved by the organization, the
+                    final policy should identify its effective
+                    date and subsequent revision dates.
+                </p>
+            </section>
+
+            <section class="policy-section" id="contact">
+                <div class="section-heading">
+                    <span class="section-number">15</span>
+                    <h2>Contact Information</h2>
+                </div>
+
+                <p>
+                    The following business contact channel is
+                    planned for corporate enquiries and privacy
+                    communications, subject to activation.
+                </p>
+
+                <div class="contact-box">
+                    <h3>GLOCLIEN SYSTEMS LTD</h3>
+
+                    <p>
+                        <strong>Website:</strong><br>
+                        <a class="inline-link" href="index.html">
+                            glocliensystemsltd.online
+                        </a>
+                    </p>
+
+                    <p>
+                        <strong>Planned business email:</strong><br>
+                        <span class="contact-email">
+                            contact@glocliensystemsltd.online
+                        </span>
+                    </p>
+
+                    <p>
+                        Email activation and privacy contact
+                        arrangements are pending confirmation.
+                    </p>
+                </div>
+            </section>
+
+        </article>
+
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+
+        <div class="footer-top">
+
+            <a class="brand" href="index.html">
+                <div class="logo" aria-hidden="true">G</div>
+                <div>
+                    <div class="brand-name">GLOCLIEN</div>
+                    <div class="brand-sub">SYSTEMS LTD</div>
+                </div>
+            </a>
+
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+
+        </div>
+
+        <div class="copyright">
+            <span>
+                &copy; <span id="year">2026</span>
+                GLOCLIEN SYSTEMS LTD. All rights reserved.
+            </span>
+
+            <span>Corporate Privacy Notice · Draft</span>
+        </div>
+
+    </div>
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
